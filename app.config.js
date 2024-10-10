@@ -15,6 +15,10 @@ module.exports = {
   scheme: config.slug,
   userInterfaceStyle: 'automatic',
   splash: config.splash,
+  assetBundlePatterns: [
+    'assets/_global/**/*',
+    `assets/${config.slug}/**/*`,
+  ],
   ios: {
     supportsTablet: true
   },
