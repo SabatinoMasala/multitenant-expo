@@ -20,6 +20,7 @@ module.exports = {
     `assets/${config.slug}/**/*`,
   ],
   ios: {
+    bundleIdentifier: config.bundleIdentifier,
     supportsTablet: true
   },
   android: {
