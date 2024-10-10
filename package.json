@@ -10,7 +10,7 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
-    "build": "eas build"
+    "build": "eas build --profile $TENANT"
   },
   "jest": {
     "preset": "jest-expo"

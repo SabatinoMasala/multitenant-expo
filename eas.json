@@ -10,7 +10,16 @@
     "preview": {
       "distribution": "internal"
     },
-    "production": {}
+    "first-tenant": {
+      "env": {
+        "TENANT": "first-tenant"
+      }
+    },
+    "second-tenant": {
+      "env": {
+        "TENANT": "second-tenant"
+      }
+    }
   },
   "submit": {
     "production": {}
