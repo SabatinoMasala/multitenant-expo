@@ -1,5 +1,5 @@
 module.exports = {
-    name: "Second tenant",
+    name: 'Second tenant',
     slug: 'second-tenant',
     bundleIdentifier: 'dev.sabatino.second-tenant',
     package: 'dev.sabatino.second-tenant',
