@@ -2,7 +2,12 @@ if (!process.env.TENANT) {
   throw new Error('TENANT environment variable is required');
 }
 
-const config = require('./configs/' + process.env.TENANT + '.js');
+let config;
+try {
+  config = require('./configs/' + process.env.TENANT + '.js');
+} catch (e) {
+  throw new Error('Invalid TENANT environment variable');
+}
 
 const version = '1.0.0';
 
