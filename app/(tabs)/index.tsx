@@ -4,11 +4,16 @@ import {HelloWave} from '@/components/HelloWave';
 import {ThemedText} from '@/components/ThemedText';
 import {ThemedView} from '@/components/ThemedView';
 
+import Constants from 'expo-constants';
+
+const name = Constants.expoConfig?.name;
+const appDefinition = Constants.expoConfig?.extra?.appdefinition;
+
 export default function HomeScreen() {
     return (
         <SafeAreaView style={styles.container}>
             <ThemedView style={styles.titleContainer}>
-                <ThemedText type="title">Welcome!</ThemedText>
+                <ThemedText darkColor={appDefinition.colors.text.dark} lightColor={appDefinition.colors.text.light} type="title">{name}</ThemedText>
                 <HelloWave />
             </ThemedView>
         </SafeAreaView>
