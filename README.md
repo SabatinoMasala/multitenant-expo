@@ -8,8 +8,8 @@ The starter kit comes configured with 2 tenants: `first-tenant` and `second-tena
 To run the app for a specific tenant, use the `TENANT` environment variable.
 
 ```bash
-TENANT=tenant-1 yarn start
-TENANT=tenant-2 yarn start
+TENANT=first-tenant yarn start
+TENANT=second-tenant yarn start
 ```
 
 ## Building
@@ -17,7 +17,7 @@ TENANT=tenant-2 yarn start
 Building the app for a specific tenant is similar to running the app.
 
 ```bash
-TENANT=tenant-1 yarn build
+TENANT=first-tenant yarn build
 ```
 
 ## Adding a new tenant
